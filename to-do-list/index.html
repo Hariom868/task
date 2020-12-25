@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>TO-DO-LIST | Homepage </title>
+    </head>
+    <body>
+        <header class="axis">
+            <div class="navbar">
+                <a href="#">Add Task</a>
+                <a href="#">View Task</a>
+                <a href="#">Daily Task</a>
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">All List
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+                </div> 
+              </div>
+        </header>
+        <br><br>
+        <body>
+            <section id="add__expense">
+           
+         
+        <div class ="main">
+            <h2 align = "center">ADD TASK</h2>
+            <hr />
+            <div class="handle__form">
+           <form method="POST">
+           <input type="text" id="fname" class="adjust__first" name="name" placeholder="Name of the task">
+           <input type="date" name="date" id="date">
+           <input type="text" id="number" name="list" placeholder="List name">
+           <select name="type" id="type">
+           <option value="Daily">Daily Task</option>
+           <option value="One_time">One-Time-Task</option>
+           </select>
+           <button class="BUTTON_KMY">Add Task</button>
+           </form>
+            </div></div></section>
+    </body>
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+        </html>
